@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans>
+	<bean id="userDao" class="com.office.ioc.dao.impl.UserDaoImpl"/>
+	<bean id="userService" class="com.office.ioc.service.impl.UserServiceImpl">
+		<property name="userDao" bean="userDao"/>
+	</bean>
+</beans>
